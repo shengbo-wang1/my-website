@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 id: intro
-slug: /
 title: 🏠 笔记导览
 ---
 
