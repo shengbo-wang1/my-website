@@ -18,10 +18,14 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    /* 🔥 核心修改：从 center 改为 flex-end，让文字沉底 */
+    align-items: flex-end;
     justify-content: center;
     overflow: hidden;
     background: transparent;
+
+    /* 给底部留出空间，不要贴底 */
+    padding-bottom: 12vh;
 }
 
 /* 独立的背景层 */
@@ -33,7 +37,7 @@
     /* 🔥 重点：这里不要写 background-image，因为 JS 写了 */
     /* 只要 background-size 和 position 就好 */
     background-size: cover;
-    background-position: center 30%; /* 稍微往上一点 */
+    background-position: center 20%; /* 稍微往上一点 */
     background-repeat: no-repeat;
 
     /* 调试色：如果图片没出来，你会看到深灰色，说明代码没挂，是图没找到 */
@@ -66,11 +70,16 @@
     color: white;
     opacity: var(--hero-opacity);
     transition: opacity 0.1s linear;
+
+    /* 🔥 新增：防止文字太宽碰到边缘 */
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 /* 标题样式 */
 .heroTitle {
-    font-size: 7rem;
+    /* 稍微改小一点点，防止手机上换行太难看，或者保持 7rem 也可以 */
+    font-size: 6rem;
     font-weight: 900;
     letter-spacing: -4px;
     line-height: 1;
