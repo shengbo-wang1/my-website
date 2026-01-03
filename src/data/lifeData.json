@@ -1,5 +1,85 @@
 [
   {
+    "date": "2025.11.15",
+    "event": "NEW ZEALAND",
+    "description": "中土世界的星空与冒险（还有神兽）",
+    "blocks": [
+      {
+        "layout": "HERO",
+        "items": [
+          { "src": "/img/life/nz/nz-wanaka-tree.jpg", "title": "That Wanaka Tree", "desc": "孤独而自由的灵魂，而且它不用上班。" }
+        ]
+      },
+      {
+        "layout": "ASYNC_LEFT",
+        "items": [
+          { "src": "/img/life/nz/nz-starry-couple.jpg", "title": "Stargazing", "desc": "冻得哆嗦也要假装浪漫。" },
+          { "src": "/img/life/nz/nz-milkyway.jpg", "title": "Galaxy", "desc": "这极光美得有点不真实，像P的。" }
+        ]
+      },
+      {
+        "layout": "ASYNC_RIGHT",
+        "items": [
+          { "src": "/img/life/nz/nz-diving2.jpg", "title": "5000米一跃而下", "desc": "这个时候已经由得不我了。" },
+          { "src": "/img/life/nz/nz-diving1.jpg", "title": "跳伞初体验", "desc": "吹的我满脸是褶子。" }
+        ]
+      },
+      {
+        "layout": "ASYNC_LEFT",
+        "items": [
+          { "src": "/img/life/nz/nz-shooting-video.mp4", "title": "Action!", "desc": "点击播放：两发全中，真的牛逼。" },
+          {
+            "src": "/img/life/nz/nz-guns-wall.jpg",
+            "title": "Real Guns",
+            "desc": "这是真家伙，不是玩具反斗城。"
+          }
+        ]
+      },
+      {
+        "layout": "ASYNC_RIGHT",
+        "items": [
+          { "src": "/img/life/nz/nz-sunset.jpg", "title": "Golden Hour", "desc": "大自然打翻了调色盘。" },
+          { "src": "/img/life/nz/nz-lake-bench.jpg", "title": "Chill", "desc": "在这里坐着发呆，感觉能省下一笔心理咨询费。" }
+        ]
+      },
+      {
+        "layout": "HALF",
+        "items": [
+          { "src": "/img/life/nz/nz-birds.jpg", "title": "Local Residents", "desc": "新西兰的鸟都不怕人，可能是知道我打不过它们。" },
+          { "src": "/img/life/nz/nz-city-couple.jpg", "title": "City Walk", "desc": "假装是本地人在溜达。" }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025.11.18",
+    "event": "SANYA TRIP",
+    "description": "阳光与海浪",
+    "blocks": [
+      {
+        "layout": "HALF",
+        "items": [
+          { "src": "/img/life/sanya/surfer-girl.jpg", "title": "Surfer Girl", "desc": "乘风破浪。" },
+          { "src": "/img/life/sanya/surfer-boy.jpg", "title": "Wave Hunter", "desc": "征服大海。" }
+        ]
+      },
+      {
+        "layout": "ASYNC_RIGHT",
+        "items": [
+          { "src": "/img/life/sanya/hotel-dusk.jpg", "title": "Twilight", "desc": "日落时分。" },
+          { "src": "/img/life/sanya/blue-wall.jpg", "title": "Summer", "desc": "蓝色夏天。" }
+        ]
+      },
+      {
+        "layout": "ASYNC_LEFT",
+        "items": [
+          { "src": "/img/life/sanya/waving.jpg", "title": "Aloha", "desc": "下次见！" },
+          { "src": "/img/life/sanya/food-party.jpg", "title": "Feast", "desc": "美食不可辜负。" }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2025.04.21",
     "event": "THE WEDDING",
     "description": "玉龙雪山下的誓言",
@@ -7,61 +87,27 @@
       {
         "layout": "HERO",
         "items": [
-          { "src": "./img/life/wedding/wedding-vows.jpg", "title": "Mountain Vows", "desc": "山海为盟。" }
+          { "src": "/img/life/wedding/wedding.MP4", "title": "Mountain Vows", "desc": "山海为盟。" }
         ]
       },
       {
         "layout": "HALF",
         "items": [
-          { "src": "./img/life/wedding/wedding-hug.jpg", "title": "Warmth", "desc": "拥抱此刻。" },
-          { "src": "./img/life/wedding/wedding-gaze.jpg", "title": "Eyes", "desc": "满眼是你。" }
+          { "src": "/img/life/wedding/wedding-hug.jpg", "title": "Warmth", "desc": "拥抱此刻。" },
+          { "src": "/img/life/wedding/wedding-gaze.jpg", "title": "Eyes", "desc": "满眼是你。" }
         ]
       },
       {
         "layout": "ASYNC_RIGHT",
         "items": [
-          { "src": "./img/life/wedding/wedding-future.jpg", "title": "Future", "desc": "携手同行。" },
-          { "src": "./img/life/wedding/wedding-bride.jpg", "title": "The One", "desc": "最美瞬间。" }
+          { "src": "/img/life/wedding/wedding-future.jpg", "title": "Future", "desc": "携手同行。" },
+          { "src": "/img/life/wedding/wedding-bride.jpg", "title": "The One", "desc": "最美瞬间。" }
         ]
       },
       {
         "layout": "HERO",
         "items": [
-          { "src": "./img/life/wedding/wedding-family.jpg", "title": "Family", "desc": "圆满。" }
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2024.05.20",
-    "event": "SANYA TRIP",
-    "description": "阳光与海浪",
-    "blocks": [
-      {
-        "layout": "HERO",
-        "items": [
-          { "src": "./img/life/love-walk.jpg", "title": "Soulmate", "desc": "确认过眼神。" }
-        ]
-      },
-      {
-        "layout": "HALF",
-        "items": [
-          { "src": "./img/life/surfer-girl.jpg", "title": "Surfer Girl", "desc": "乘风破浪。" },
-          { "src": "./img/life/surfer-boy.jpg", "title": "Wave Hunter", "desc": "征服大海。" }
-        ]
-      },
-      {
-        "layout": "ASYNC_RIGHT",
-        "items": [
-          { "src": "./img/life/hotel-dusk.jpg", "title": "Twilight", "desc": "日落时分。" },
-          { "src": "./img/life/blue-wall.jpg", "title": "Summer", "desc": "蓝色夏天。" }
-        ]
-      },
-      {
-        "layout": "ASYNC_LEFT",
-        "items": [
-          { "src": "./img/life/waving.jpg", "title": "Aloha", "desc": "下次见！" },
-          { "src": "./img/life/food-party.jpg", "title": "Feast", "desc": "美食不可辜负。" }
+          { "src": "/img/life/wedding/wedding-family.jpg", "title": "Family", "desc": "圆满。" }
         ]
       }
     ]

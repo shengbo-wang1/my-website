@@ -138,7 +138,7 @@ export default function Home() {
                             </div>
                         </Link>
 
-                        <Link to="/books" className="access-tile">
+                        <Link to="/thoughts" className="access-tile">
                             <div className="tile-icon">📚</div>
                             <div className="tile-content">
                                 <div className="tile-title">闲书杂谈</div>

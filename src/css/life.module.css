@@ -6,7 +6,6 @@
     width: 100%;
     overflow-x: hidden;
     --hero-opacity: 1;
-    /* 🔥 关键修复：改成透明，防止挡住底下的背景图 */
     background-color: transparent;
 }
 
@@ -18,40 +17,29 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    /* 🔥 核心修改：从 center 改为 flex-end，让文字沉底 */
-    align-items: flex-end;
+    align-items: flex-end; /* 沉底 */
     justify-content: center;
     overflow: hidden;
     background: transparent;
-
-    /* 给底部留出空间，不要贴底 */
     padding-bottom: 12vh;
 }
 
-/* 独立的背景层 */
 .heroBackground {
     position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh; /* 强制撑开 */
+    top: 0; left: 0; width: 100vw; height: 100vh;
     z-index: -1;
-
-    /* 🔥 重点：这里不要写 background-image，因为 JS 写了 */
-    /* 只要 background-size 和 position 就好 */
     background-size: cover;
-    background-position: center 20%; /* 稍微往上一点 */
+    background-position: center 50%;
     background-repeat: no-repeat;
-
-    /* 调试色：如果图片没出来，你会看到深灰色，说明代码没挂，是图没找到 */
     background-color: #333;
-
-    /* 呼吸动画 + 泛白效果 */
     animation: breathe 20s infinite alternate ease-in-out;
-    will-change: opacity;
+    will-change: transform, opacity;
     opacity: var(--hero-opacity);
     transition: opacity 0.1s linear;
     filter: saturate(1.1);
+    transform: translateZ(0);
 }
 
-/* 遮罩层 */
 .heroOverlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -61,7 +49,6 @@
     transition: opacity 0.1s linear;
 }
 
-/* 封面文字内容 */
 .heroContent {
     position: relative;
     z-index: 1;
@@ -70,15 +57,11 @@
     color: white;
     opacity: var(--hero-opacity);
     transition: opacity 0.1s linear;
-
-    /* 🔥 新增：防止文字太宽碰到边缘 */
     max-width: 90%;
     margin: 0 auto;
 }
 
-/* 标题样式 */
 .heroTitle {
-    /* 稍微改小一点点，防止手机上换行太难看，或者保持 7rem 也可以 */
     font-size: 6rem;
     font-weight: 900;
     letter-spacing: -4px;
@@ -100,7 +83,6 @@
     animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
 }
 
-/* 鼠标提示 */
 .scrollMouse {
     position: absolute;
     bottom: 50px; left: 50%;
@@ -132,7 +114,6 @@
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 100px 20px 120px;
@@ -140,8 +121,7 @@
     box-shadow: 0 -20px 60px rgba(0,0,0,0.1);
 }
 
-/* 你的其他样式保持不变 (EventGroup, PhotoCard 等) */
-/* 为了确保不丢失，以下是布局关键代码 */
+/* 其他排版样式 */
 .eventGroup { display: grid; grid-template-columns: 220px 1fr; gap: 50px; margin-bottom: 100px; position: relative; padding: 0 40px; }
 .eventGroup::before { content: ""; position: absolute; left: 260px; top: 20px; bottom: -50px; width: 0; border-left: 2px dashed #e0e0e0; z-index: 0; }
 .eventGroup:last-child::before { display: none; }
@@ -170,8 +150,7 @@
 .photoDesc { color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-top: 8px; }
 .lightbox { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.98); z-index: 9999; display: flex; justify-content: center; align-items: center; padding: 20px; }
 .lightboxImg { max-width: 95%; max-height: 90vh; box-shadow: 0 30px 80px rgba(0,0,0,0.2); }
-.scrollHidden { opacity: 0; transform: translateY(60px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
-.scrollVisible { opacity: 1; transform: translateY(0); }
+.scrollHidden { opacity: 1 !important; transform: none !important; }
 @keyframes breathe { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes scrollDown { 0% { opacity: 1; transform: translateX(-50%) translateY(0); } 100% { opacity: 0; transform: translateX(-50%) translateY(20px); } }

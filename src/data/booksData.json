@@ -1,0 +1,56 @@
+[
+  {
+    "title": "时寒冰说：未来二十年",
+    "author": "时寒冰",
+    "cover": "https://img9.doubanio.com/view/subject/l/public/s27330675.jpg",
+    "rating": 5,
+    "category": "经济金融",
+    "tags": ["趋势", "宏观经济"],
+    "review": "这是一本关于周期的书。\n\n时寒冰通过对历史数据的详尽分析，提出了未来全球经济的大趋势。虽然有些预测可能有争议，但他独特的分析框架——从地缘政治到货币战争的联动视角，非常值得学习。\n\n在这个充满不确定性的时代，理解周期或许是我们唯一的护身符。"
+  },
+  {
+    "title": "纳瓦尔宝典",
+    "author": "Eric Jorgenson",
+    "cover": "https://images.unsplash.com/photo-1555436169-20e93ea9a7ff?q=80&w=1000&auto=format&fit=crop",
+    "rating": 4,
+    "category": "商业智慧",
+    "tags": ["财富", "哲学"],
+    "review": "把自己产品化。\n\n不要出卖时间，要出卖产品。利用代码和媒体这两种零边际成本的杠杆。幸福是一种技能，就像健身一样，是可以习得的。"
+  },
+  {
+    "title": "埃隆·马斯克传",
+    "author": "Walter Isaacson",
+    "cover": "https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=1000&auto=format&fit=crop",
+    "rating": 5,
+    "category": "人物传记",
+    "tags": ["商业", "科技"],
+    "review": "极致的痛苦带来极致的成就。\n\n马斯克的痛苦阀值极高，他似乎并不追求快乐，而是追求某种能够推动人类命运的宏大叙事。"
+  },
+  {
+    "title": "乔布斯传",
+    "author": "Walter Isaacson",
+    "cover": "/img/logo.jpg",
+    "rating": 5,
+    "category": "人物传记",
+    "tags": ["苹果", "设计"],
+    "review": "现实扭曲力场。\n\n乔布斯证明了审美也是一种生产力。"
+  },
+  {
+    "title": "三体",
+    "author": "刘慈欣",
+    "cover": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+    "rating": 5,
+    "category": "科幻巨著",
+    "tags": ["科幻", "哲学"],
+    "review": "给岁月以文明，而不是给文明以岁月。"
+  },
+  {
+    "title": "黑客与画家",
+    "author": "Paul Graham",
+    "cover": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1000&auto=format&fit=crop",
+    "rating": 4,
+    "category": "技术随笔",
+    "tags": ["黑客", "创业"],
+    "review": "黑客也是创作者，就像画家一样。"
+  }
+]

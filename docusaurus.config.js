@@ -4,13 +4,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: '踏踏实实王老六',
   tagline: 'Talk is cheap, show me the code.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.jpg',
 
   // GitHub Pages 部署配置
   url: 'https://shengbo-wang1.github.io',
-  baseUrl: '/my-website/',
+  baseUrl: '/',
   organizationName: 'shengbo-wang1',
-  projectName: 'my-website',
+  projectName: 'shengbo-wang1.github.io',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -49,7 +49,7 @@ const config = {
           title: '王老六的博客',
           logo: {
             alt: 'Logo',
-            src: 'img/logo.svg', // 如果没有Logo，它会自动显示文字
+            src: 'img/logo.jpg', // 如果没有Logo，它会自动显示文字
           },
           // 核心修改：这里改为三大模块
           items: [
@@ -65,7 +65,7 @@ const config = {
               position: 'left'
             },
             {
-              to: '/books',
+              to: '/thoughts',
               label: '闲书杂谈', // 模块 3
               position: 'left'
             },
